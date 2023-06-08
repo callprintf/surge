@@ -1,7 +1,7 @@
 #!name=tmall_seckill
 
-[Rule]
-PROTOCOL,UDP,REJECT
+#[Rule]
+#PROTOCOL,UDP,REJECT
 
 [MITM]
 hostname=%APPEND% trade-acs.m.taobao.com:0, 59.82.*.*:0
