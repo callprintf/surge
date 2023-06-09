@@ -4,7 +4,7 @@
 #PROTOCOL,UDP,REJECT
 
 [MITM]
-hostname=%APPEND% trade-acs.m.taobao.com:0, 59.82.*.*:0
+hostname=%APPEND% trade-acs.m.taobao.com:0, 59.82.*.*:0,106.11.*.*:0,203.119.*.*:0
 
 [Script]
 create_order_rsp = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.trade\.order\.create.*,requires-body=0,debug=0,script-path=https://raw.githubusercontent.com/callprintf/surge/main/create_order_rsp.js,script-update-interval=0
